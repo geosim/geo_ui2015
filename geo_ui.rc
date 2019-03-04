@@ -1,0 +1,1692 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_KEYS                BITMAP                  "chiavi.bmp"
+IDB_ENV_VARIABLE        BITMAP                  "env_variable.bmp"
+IDB_NET_NODE            BITMAP                  "net_node.bmp"
+IDB_NET_NODE_SFONDO     BITMAP                  "net_node_sfondo.bmp"
+IDB_DESCENDING_ORDER    BITMAP                  "descend.bmp"
+IDB_ASCENDING_ORDER     BITMAP                  "ascendin.bmp"
+IDB_LOCKED              BITMAP                  "locked.bmp"
+IDB_UNLOCKED            BITMAP                  "unlocked.bmp"
+IDB_VISIBLE             BITMAP                  "lampadina accesa.bmp"
+IDB_BLANK               BITMAP                  "blank.bmp"
+IDB_DBVALUES            BITMAP                  "DBVALUES.bmp"
+IDB_BUTTON_SUPPORT      BITMAP                  "buttonSupport.bmp"
+IDB_SUGGEST             BITMAP                  "suggest.bmp"
+IDB_MATHOP              BITMAP                  "mathop.bmp"
+IDB_PRINTER             BITMAP                  "printer.bmp"
+IDB_SELECT_OBJS         BITMAP                  "SelectObjs.bmp"
+IDB_VERT_DBATTR         BITMAP                  "VertDBDataGridCtl.bmp"
+IDB_HORIZ_DBATTR        BITMAP                  "HorizDBDataGridCtl.bmp"
+IDB_8x16_VISIBLE_ASCENDING_ORDER BITMAP                  "8x16_visible_ascending.bmp"
+IDB_8x16_VISIBLE_DESCENDING_ORDER BITMAP                  "8x16_visible_descending.bmp"
+IDB_8x16_ASCENDING_ORDER BITMAP                  "8x16_ascending.bmp"
+IDB_8x16_DESCENDING_ORDER BITMAP                  "8x16_descendi.bmp"
+IDB_8x16_VISIBLE        BITMAP                  "8x16_visible.bmp"
+IDB_SECONDARY_TAB       BITMAP                  "SecTab.bmp"
+IDB_ADD_RECORD          BITMAP                  "ADD_RECORD.bmp"
+IDB_DEL_RECORD          BITMAP                  "DEL_RECORD.bmp"
+IDB_ONECOLUMN           BITMAP                  "OneColumn.bmp"
+IDB_TWOCOLUMN           BITMAP                  "OneColum.bmp"
+IDB_RAY                 BITMAP                  "ray.bmp"
+IDB_INIT_DIST           BITMAP                  "init_dist.bmp"
+IDB_FINAL_DIST          BITMAP                  "final_dist.bmp"
+IDB_OFFSET_DIST         BITMAP                  "offset_dist.bmp"
+IDB_TREE_DISPLAY_MODE   BITMAP                  "tree_display_mode.bmp"
+IDB_LIST_DISPLAY_MODE   BITMAP                  "list_display_mode.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_OPTION_NET MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Nuovo",                       IDC_NEW_ALIAS
+        MENUITEM "Elimina",                     IDC_ERASE_ALIAS
+    END
+END
+
+IDR_MENU_EDIT MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Lista valori già inseriti...", IDC_DB_LIST
+        MENUITEM "Suggerimento...",             IDC_SUGGEST
+        MENUITEM "Operatori matematici...",     IDC_MATH_OP
+        MENUITEM SEPARATOR
+        MENUITEM "Annulla",                     IDC_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Taglia",                      IDC_CUT
+        MENUITEM "Copia",                       IDC_COPY
+        MENUITEM "Copia scheda",                IDC_COPY_SHEET
+        MENUITEM "Incolla",                     IDC_PASTE
+        MENUITEM "Elimina",                     IDC_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Seleziona tutto",             IDC_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Stampa scheda corrente",      IDC_PRINT_SHEET
+        MENUITEM "Stampa tutte le schede",      199
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom",                        IDC_ZOOM, CHECKED
+        MENUITEM "Evidenzia",                   IDC_HIGHLIGHT, CHECKED
+        MENUITEM "Congela pannello",            IDC_FROZEN_PANEL
+    END
+END
+
+IDR_MENU_SHEET MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Copia scheda",                IDC_COPY_SHEET
+        MENUITEM "Stampa scheda corrente",      IDC_PRINT_SHEET
+        MENUITEM "Stampa tutte le schede",      IDC_PRINT_SHEETS
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom",                        195, CHECKED
+        MENUITEM "Evidenzia",                   196, CHECKED
+        MENUITEM "Congela pannello",            IDC_FROZEN_PANEL
+    END
+END
+
+IDR_MENU_LYR_DISP_MODEL MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Nuovo",                       IDNEW
+        MENUITEM "Elimina",                     IDREMOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "GEO_UI ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "GEO_UI"
+            VALUE "LegalCopyright", "Copyright © 2012"
+            VALUE "OriginalFilename", "GEO_UI.arx"
+            VALUE "ProductName", "GEO_UI Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GEOSIM              ICON                    "GEOSIM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WRKSESSION_CLASSES DIALOGEX 0, 0, 196, 111
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_GEOCLASSLISTCTRL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,21,92,51,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    GROUPBOX        "Zona di estrazione",IDC_ZONE,59,76,107,23
+    LTEXT           "",IDC_SELECTED_COUNT,7,76,47,8
+    CONTROL         "Anteprima",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,87,45,9
+    CONTROL         "Finestra attuale",IDC_RADIO_ACTUAL_WINDOW,"Button",BS_AUTORADIOBUTTON,63,85,63,11
+    CONTROL         "Query",IDC_RADIO_QUERY,"Button",BS_AUTORADIOBUTTON,130,85,32,11
+    PUSHBUTTON      "",IDC_DISPLAYMODE_BUTTON,6,3,19,14,BS_BITMAP
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,113,20,76,52,WS_EX_CLIENTEDGE
+END
+
+IDD_ENT_DBVALUES DIALOGEX 0, 0, 170, 143
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_ENTDBVALUES_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,5,22,160,99,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_REM,"Static",SS_LEFTNOWORDWRAP | SS_WORDELLIPSIS | WS_GROUP,40,125,13,13,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_CLASSLIST_COMBO,5,5,141,65,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT,58,126,20,12,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE | NOT WS_BORDER
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOCOLUMNHEADER | NOT WS_VISIBLE | WS_TABSTOP,82,127,29,11
+    PUSHBUTTON      "",IDC_COMBO_BUTTON,111,128,11,10,BS_BITMAP | NOT WS_VISIBLE
+    CONTROL         "",IDC_MASKEDBOX,"MfcMaskedEdit",NOT WS_VISIBLE | WS_TABSTOP,127,127,12,11
+    PUSHBUTTON      "OK",IDC_OK,143,126,22,12
+    PUSHBUTTON      "",IDC_VERTICAL_MODE,5,125,14,13,BS_BITMAP
+    PUSHBUTTON      "",IDC_GRAPH_SELECTION,152,5,14,13,BS_BITMAP
+    PUSHBUTTON      "",IDC_SECONDARY_TAB,12,125,14,13,BS_BITMAP | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_ADD_SEC,21,125,15,13,BS_BITMAP
+    PUSHBUTTON      "",IDC_DEL_SEC,27,125,15,13,BS_BITMAP
+END
+
+IDD_TREEDLG DIALOGEX 0, 0, 389, 295
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - GEOtree"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "OK",IDOK,67,274,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,274,50,14
+    CONTROL         "Solo il progetto con codice",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,22,100,10
+    EDITTEXT        IDC_PRJCODE,125,22,65,12,ES_AUTOHSCROLL
+    LTEXT           "Codici:",IDC_STATIC,266,41,33,8
+    EDITTEXT        IDC_CAT,266,79,61,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Applica",IDC_CatApply,332,78,44,12
+    EDITTEXT        IDC_PRJ_CODE,41,218,24,13,ES_AUTOHSCROLL
+    LTEXT           "Prj",IDC_STATIC,15,218,14,8
+    LTEXT           "Cls",IDC_STATIC,77,218,14,8
+    EDITTEXT        IDC_CLS_CODE,103,218,24,13,ES_AUTOHSCROLL
+    LTEXT           "Sub",IDC_STATIC,15,244,14,8
+    EDITTEXT        IDC_SUB_CODE,41,244,24,13,ES_AUTOHSCROLL
+    LTEXT           "Nome",IDC_STATIC,139,218,21,8
+    EDITTEXT        IDC_NAME,172,218,46,13,ES_AUTOHSCROLL
+    LTEXT           "Colore",IDC_STATIC,139,244,21,8
+    EDITTEXT        IDC_COLOR,172,244,46,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Aggiorna",IDC_UPDATE_ITEM,230,217,43,16
+    GROUPBOX        "",IDC_STATIC,13,210,263,63
+    LTEXT           "Sec",IDC_STATIC,77,244,14,8
+    EDITTEXT        IDC_SEC_CODE,103,244,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Seleziona",IDC_SELECT,230,244,43,17
+    LTEXT           "Prj:",IDC_STATIC,17,190,11,8
+    LTEXT           "Cls:",IDC_STATIC,84,190,12,8
+    LTEXT           "Sub:",IDC_STATIC,152,190,16,8
+    LTEXT           "Sec:",IDC_STATIC,224,190,16,8
+    EDITTEXT        IDC_GETPRJ,35,190,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_GETCLS,103,190,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_GETSUB,175,190,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_GETSEC,247,190,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Filtri per le classi",IDC_STATIC,260,32,121,121
+    EDITTEXT        IDC_TYPE,266,105,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Applica",IDC_TypeApply,332,104,44,12
+    CONTROL         "Classi estratte",IDC_EXTCLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,266,122,106,11
+    CONTROL         "Classi modificabili",IDC_MODCLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,136,106,11
+    LTEXT           "Tipi:",IDC_STATIC,266,94,14,8
+    GROUPBOX        "Filtri sulle secondarie",IDC_STATIC,259,157,122,26
+    EDITTEXT        IDC_SECTYPE,263,168,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Applica",IDC_SecApply,328,167,44,12
+    GROUPBOX        "Filtri sui progetti",IDC_STATIC,13,13,181,25
+    LTEXT           "Categorie:",IDC_STATIC,266,69,33,8
+    EDITTEXT        IDC_CODES,266,51,61,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Applica",IDC_CodesApply,332,52,44,12
+    PUSHBUTTON      "REFRESH",IDC_REFRESH,315,228,40,22
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,142,44,82,51
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 186, 233
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Identificazione utente"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LOGIN,82,158,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,82,177,97,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,212,43,14
+    PUSHBUTTON      "Annulla",IDCANCEL,71,212,43,14
+    PUSHBUTTON      "?",IDHELP,135,213,43,13
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",ACS_CENTER | ACS_AUTOPLAY | WS_BORDER,7,7,172,134
+    LTEXT           "Nome utente:",IDC_STATIC_LOGIN,31,160,44,13,0,WS_EX_TRANSPARENT
+    LTEXT           "Password:",IDC_STATIC,43,177,36,13
+    LTEXT           "Inserire la propria password per confermare l'operazione.",IDC_STATIC_MSG,8,145,171,30,NOT WS_VISIBLE
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP,13,173,15,13
+    CONTROL         "&Controllo sessioni di lavoro",IDC_CHECK_SESSION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,197,172,10
+END
+
+IDD_OPTION_NET DIALOGEX 0, 0, 373, 236
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Property Page"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_ALIAS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,12,52,347,170,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Nuovo",IDC_NEW_ALIAS,298,16,62,15
+    GROUPBOX        "Lista nodi rete",IDC_STATIC,6,7,361,222
+    CONTROL         127,IDC_STATIC,"Static",SS_BITMAP,13,17,35,33
+    COMBOBOX        IDC_GENERIC_COMBO,105,33,22,70,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_SORT | CBS_UPPERCASE | NOT WS_VISIBLE | WS_VSCROLL
+    PUSHBUTTON      "Elimina",IDC_ERASE_ALIAS,298,33,62,15
+    COMBOBOX        IDC_ALIAS_COMBO,149,33,24,72,CBS_DROPDOWN | CBS_SORT | CBS_UPPERCASE | NOT WS_VISIBLE | WS_VSCROLL
+END
+
+IDD_OPTION_ENV DIALOGEX 0, 0, 374, 260
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Aggiungi entità all'insieme da salvare",IDC_ADD_ENTITY_TO_SAVESET,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,19,128,9
+    CONTROL         "Riallineamento aspetto grafico con le caratteristiche di default",IDC_ALIGNHIGHLIGHTEDFASONSAVE,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,13,31,131,18
+    CONTROL         "Aggiorna grafica",IDC_UPD_GRAPH_ON_EXTR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,65,94,13
+    CONTROL         "Aggiorna grafica solo simulazioni",IDC_UPD_GRAPH_ON_EXTR_SIM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,79,114,10
+    CONTROL         "Sì/No",IDC_RADIO_LOGIC_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,169,29,37,10
+    CONTROL         "Vero/Falso",IDC_RADIO_LOGIC_2,"Button",BS_AUTORADIOBUTTON,169,41,52,10
+    CONTROL         "On/Off",IDC_RADIO_LOGIC_3,"Button",BS_AUTORADIOBUTTON,169,54,36,10
+    CONTROL         "1/0",IDC_RADIO_LOGIC_4,"Button",BS_AUTORADIOBUTTON,169,67,27,10
+    CONTROL         "Breve (es. 12/03/2002)",IDC_RADIO_DATA_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,235,29,91,8
+    CONTROL         "Estesa (es. lunedì 11 marzo 2002)",IDC_RADIO_DATA_2,
+                    "Button",BS_AUTORADIOBUTTON,235,42,127,9
+    CONTROL         "Usa altezza testo di default",IDC_INS_H_TEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,159,132,11
+    CONTROL         "Usa rotazione di default",IDC_INS_ROT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,173,132,10
+    CONTROL         "Usa scala X di default",IDC_INS_X_SCALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,186,132,10
+    CONTROL         "Usa scala Y di default",IDC_INS_Y_SCALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,199,132,10
+    CONTROL         "Usa posizione di default per gli attributi visibili (pt. ins. per oggetti nodali, pt. medio tratto più lungo per oggetti lineari, centroide per superfici)",IDC_INS_POS,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,13,212,132,35
+    EDITTEXT        IDC_NUM_TEST,343,163,15,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_WAIT_TIME,343,179,15,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Attivo (GEOSIM.LOG)",IDC_LOG_FILE,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,166,213,108,9
+    GROUPBOX        "Modalità di inserimento",IDC_STATIC,7,146,144,105
+    GROUPBOX        "Salvataggio",IDC_STATIC,7,7,144,46
+    GROUPBOX        "Tipo logico",IDC_STATIC,163,17,61,63
+    GROUPBOX        "Tipo data/ora",IDC_STATIC,229,17,131,63
+    GROUPBOX        "File di registro",IDC_STATIC,158,201,209,27
+    GROUPBOX        "Multiutenza",IDC_STATIC,158,151,209,47
+    LTEXT           "Numero di tentativi prima di segnalare l'errore",IDC_STATIC,167,163,168,19
+    LTEXT           "Secondi di attesa fra due tentativi",IDC_STATIC,167,180,112,13
+    GROUPBOX        "Formato dati",IDC_STATIC,157,7,210,80
+    GROUPBOX        "Estrazione",IDC_STATIC,7,55,144,86
+    CONTROL         "Dinamica su zoom corrente",IDC_DYNAMIC_EXTRACTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,92,101,10
+    GROUPBOX        "Sincronizzazione MAP->GEOsim",IDC_STATIC,244,90,123,25
+    CONTROL         "Automatica",IDC_AUTO_SYNCRO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,253,102,74,8
+    CONTROL         "Aggiungi collegamenti ASE",IDC_ADD_ASE_LINK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,105,101,10
+    GROUPBOX        "Quotatura",IDC_STATIC,157,90,79,58
+    CONTROL         "Esplosa",IDC_DIMASSOC_0,"Button",BS_AUTORADIOBUTTON,165,102,41,10
+    CONTROL         "Non associativa",IDC_DIMASSOC_1,"Button",BS_AUTORADIOBUTTON,165,117,67,10
+    CONTROL         "Associativa",IDC_DIMASSOC_2,"Button",BS_AUTORADIOBUTTON,165,132,52,10
+    GROUPBOX        "Dimensioni min. finestra Autozoom",IDC_STATIC,244,119,123,29
+    EDITTEXT        IDC_AUTO_ZOOM_MIN_Y_DIM,331,130,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTO_ZOOM_MIN_X_DIM,267,130,28,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,251,130,14,10
+    LTEXT           "Y",IDC_STATIC,315,130,12,11
+    CONTROL         "Seleziona le classi estratte nella sessione di lavoro precedente",IDC_SEL_PREVIOUS_EXTRACTED_CLASSES,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,119,122,19
+END
+
+IDD_DATA_MODEL_DLG DIALOGEX 0, 0, 269, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Modello dei dati"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Chiudi",IDOK,68,143,50,14
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_TABSTOP,7,7,182,85
+END
+
+IDD_ONEGEOCOMPONENTSELECT_DLG DIALOGEX 0, 0, 186, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,146,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,68,146,50,14
+    PUSHBUTTON      "?",IDHELP,129,146,50,14
+    LTEXT           "",IDC_MSG,7,7,151,10
+    PUSHBUTTON      "",IDC_GRAPH_SELECTION,164,4,15,15,BS_BITMAP
+    CONTROL         "Controllo connessioni",IDC_ENABLE_CONNECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,130,83,10
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,9,24,169,99
+END
+
+IDD_DEFTABREF_DLG DIALOGEX 0, 0, 380, 259
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Liste di scelta valori per attributi"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Tutti i progetti",IDC_ALL_PRJS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,59,10
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,31,135,94
+    COMBOBOX        IDC_ATTRIBNAME,63,131,89,75,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "1 colonna",IDC_RADIO_DEF,"Button",BS_AUTORADIOBUTTON,175,29,47,10
+    CONTROL         "Obbligata a 1 colonna",IDC_RADIO_FDEF,"Button",BS_AUTORADIOBUTTON,175,43,85,10
+    CONTROL         "2 colonne",IDC_RADIO_REF,"Button",BS_AUTORADIOBUTTON,275,28,48,10
+    CONTROL         "Obbligata a 2 colonne",IDC_RADIO_TAB,"Button",BS_AUTORADIOBUTTON,275,43,84,9
+    COMBOBOX        IDC_GEOLISP_COMBO,241,64,124,69,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,168,85,199,139
+    PUSHBUTTON      "Chiudi",IDOK,133,237,50,14
+    DEFPUSHBUTTON   "?",IDHELP,195,237,50,14
+    LTEXT           "Nome attributo:",IDC_STATIC,13,133,50,10
+    LTEXT           "",IDC_MSG,13,150,138,74,WS_BORDER,WS_EX_CLIENTEDGE
+    GROUPBOX        "Lista di scelta valori ",IDC_STATIC,162,7,211,223
+    GROUPBOX        "Tipo scelta",IDC_STATIC,167,17,198,41
+    DEFPUSHBUTTON   "tapullo per non chiudere con enter",IDC_BUTTON1,263,235,110,16,NOT WS_VISIBLE | NOT WS_TABSTOP
+    GROUPBOX        "Modello dati",IDC_STATIC,7,7,149,223
+    LTEXT           "Condizione GEOLisp:",IDC_STATIC,169,65,68,11
+    CONTROL         201,IDC_STATIC,"Static",SS_BITMAP,235,27,11,12
+    CONTROL         202,IDC_STATIC,"Static",SS_BITMAP,335,27,11,12
+END
+
+IDD_VALUESLISTDLG DIALOGEX 0, 0, 186, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_MSG,7,7,172,11
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_TABSTOP,7,18,172,151,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "OK",IDOK,30,177,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,105,177,50,14
+END
+
+IDD_MATHOPERAT_DLG DIALOGEX 0, 0, 178, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Operatori matematici"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,55,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,63,55,50,14
+    GROUPBOX        "",IDC_STATIC,7,3,163,43
+    COMBOBOX        IDC_COMBO_OPERAT,16,24,71,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_VALUE,97,24,43,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK_PERC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,26,9,8
+    PUSHBUTTON      "?",IDHELP,120,55,50,14
+    LTEXT           "Operatore",IDC_STATIC,18,11,64,10
+    LTEXT           "Valore",IDC_STATIC,97,11,40,10
+    LTEXT           "%",IDC_STATIC,151,14,11,9
+END
+
+IDD_SEC_DBVALUES DIALOGEX 0, 0, 360, 172
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "GEOsim - Tabelle secondarie"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_LYR_DISPLAY_MODEL DIALOGEX 0, 0, 383, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Gestione modelli visualizzazione piani"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Salva",IDSAVE,212,191,37,14
+    PUSHBUTTON      "Chiudi",IDCLOSE,297,191,37,14
+    GROUPBOX        "",IDC_STATIC,7,16,369,169
+    PUSHBUTTON      "?",IDHELP,339,191,37,14
+    PUSHBUTTON      "Carica",IDLOAD,255,191,37,14
+    PUSHBUTTON      "Nuovo",IDNEW,319,25,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,14,25,299,124,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT,325,71,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BROWSE_FILE,341,89,17,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Elimina",IDREMOVE,319,42,50,14
+    LTEXT           "",IDC_CURRENT_LST_DISP_MODEL,60,7,316,11
+    PUSHBUTTON      "Attiva",IDACTIVATE,7,191,37,14
+    PUSHBUTTON      "Disattiva",IDDEACTIVATE,49,191,37,14
+    LTEXT           "Modello attivo:",IDC_STATIC,7,7,49,13
+    LTEXT           "Descrizione modello:",IDC_STATIC,14,156,71,8
+    EDITTEXT        IDC_EDIT1,14,167,299,13,ES_MULTILINE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "tapullo per non chiudere con enter",IDC_BUTTON1,318,111,50,16,NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_GRIDFLOW_DLG DIALOGEX 0, 0, 186, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Direzione del flusso idrico"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,175,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,73,175,41,14
+    COMBOBOX        IDC_DIRECTION_ATTRIBUTE,73,148,99,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    LTEXT           "Per ogni cella della griglia nell'area selezionata viene calcolata la cella a valle in cui l'acqua scola. In quale attributo si desidera memorizzare il codice della cella a valle ?",IDC_STATIC,14,114,158,33
+    LTEXT           "Nome attributo:",IDC_STATIC,14,148,55,12
+    GROUPBOX        "Area di calcolo",IDC_STATIC,14,64,158,27
+    COMBOBOX        IDC_GRID_GRIDAREATYPE,20,74,145,39,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Z_ATTRIBUTE,73,97,99,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Attributo quota:",IDC_STATIC,13,98,52,12
+    PUSHBUTTON      "?",IDHELP,125,175,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,172,161,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,16,26,156,34
+END
+
+IDD_GRIDDRAPE DIALOGEX 0, 0, 206, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Drape"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_Z_ATTRIBUTE,75,67,118,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Seleziona tutto",IDC_RADIO_SELECTALL,"Button",BS_AUTORADIOBUTTON,20,95,62,10
+    CONTROL         "Selezione manuale",IDC_RADIO_MANUALSELECTION,"Button",BS_AUTORADIOBUTTON,91,95,70,11
+    PUSHBUTTON      "",IDC_BUTTON_OBJSSELECTION,170,92,16,14,BS_BITMAP
+    DEFPUSHBUTTON   "OK",IDOK,26,138,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,82,138,41,14
+    PUSHBUTTON      "?",IDHELP,138,138,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,192,124,0,WS_EX_TRANSPARENT
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    GROUPBOX        "Selezione oggetti",IDC_STATIC,14,83,177,41
+    LTEXT           "Attributo quota:",IDC_STATIC,15,68,52,12
+    LTEXT           "0 oggetti selezionati",IDC_N_SELECTED,21,110,165,13
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,24,178,36
+END
+
+IDD_DB_CONN_DLG DIALOGEX 0, 0, 353, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Connessione a Database"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_UDL_LIST_COMBO,58,7,288,104,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_UDL_PROPERTIES_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,15,38,324,44
+    PUSHBUTTON      "Connetti",IDC_CONNECT,289,88,50,14
+    EDITTEXT        IDC_TABLE_EDIT,95,117,251,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,182,137,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,239,137,50,14
+    PUSHBUTTON      "?",IDHELP,296,137,50,14
+    LTEXT           "Sorgente dati:",IDC_STATIC,7,7,47,12
+    GROUPBOX        "Proprietà di connessione ai dati",IDC_STATIC,7,27,339,83
+    LTEXT           "Nome tabella:",IDC_TABLE_NAME_LBL,7,117,86,13
+    COMBOBOX        IDC_TABLE_COMBO,132,120,47,34,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_PROP_BUTTON,205,21,17,10,NOT WS_VISIBLE
+    EDITTEXT        IDC_PROP_EDIT,231,23,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Stato della connessione:",IDC_LBL_CONNECTION_STATE,16,91,175,10
+    EDITTEXT        IDC_SCHEMA_EDIT,250,120,54,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Nome schema:",IDC_SCHEMA_NAME_LBL,198,120,51,14,NOT WS_VISIBLE
+END
+
+IDD_GSVALUESLIST_TAB DIALOGEX 0, 0, 197, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_VALUES_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,6,6,122,114,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Nuovo",IDC_ADD,134,6,57,14
+    PUSHBUTTON      "Elimina",IDC_REMOVE,134,23,57,14
+    PUSHBUTTON      "Elimina tutto",IDC_REMOVE_ALL,134,40,57,14
+    PUSHBUTTON      "Ordina",IDC_SORT,134,58,57,14
+    EDITTEXT        IDC_GENERIC_EDIT,134,76,22,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP
+    PUSHBUTTON      "Carica",IDC_LOAD,134,88,57,14
+    PUSHBUTTON      "Salva",IDC_SAVE,134,106,57,14
+END
+
+IDD_DBVALUESLIST_TAB DIALOGEX 0, 0, 197, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_VALUES_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,48,120,71,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Sorgente dati...",IDC_DBCONN_BUTTON,128,7,62,13
+    EDITTEXT        IDC_EDIT1,27,31,129,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Test",IDC_SQLTEST_BUTTON,162,30,28,13
+    PUSHBUTTON      "Carica",IDC_LOAD,134,88,57,14
+    PUSHBUTTON      "Salva",IDC_SAVE,134,106,57,14
+    LTEXT           "Tipo di connessione:",IDC_STATIC,7,7,66,11
+    LTEXT           "SQL:",IDC_STATIC,7,32,18,9
+    LTEXT           "Nessuna",IDC_UDL_LBL,7,19,183,10
+END
+
+IDD_TOPO_RESISTANCE DIALOGEX 0, 0, 542, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Impostazione resistenza per visita topologica"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,377,150,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,432,150,50,14
+    CONTROL         "",IDC_RESISTANCE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,28,528,115
+    PUSHBUTTON      "Carica...",IDC_LOAD_BUTTON,7,150,50,14
+    PUSHBUTTON      "Salva...",IDC_SAVE_BUTTON,61,150,50,14
+    PUSHBUTTON      "?",IDC_BUTTON3,485,150,50,14
+    COMBOBOX        IDC_COMBO1,519,7,16,52,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Specificare i valori da utilizzare per determinare la resistenza diretta e quella inversa delle entità lineari e la resistenza delle entità puntuali (diretta e inversa coincidono)",IDC_LBL,7,7,503,17
+END
+
+IDD_GRIDSPATIALINTERPOLATIONIDW_DLG DIALOGEX 0, 0, 289, 329
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Interpolazione spaziale IDW"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,308,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,124,308,41,14
+    COMBOBOX        IDC_ATTRIBUTE,128,119,133,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    LTEXT           "Ogni cella della griglia priva di valore nell'area selezionata viene calcolata facendo la media pesata delle celle valorizzate prossime a quella incognita.",IDC_STATIC,16,97,258,19
+    LTEXT           "Nome attributo da calcolare:",IDC_STATIC,26,120,97,12
+    GROUPBOX        "Area di calcolo",IDC_STATIC,14,64,260,27
+    COMBOBOX        IDC_GRID_GRIDAREATYPE,20,74,246,39,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?",IDHELP,176,308,41,14
+    GROUPBOX        "",IDC_STATIC,7,4,275,296,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,16,26,258,34
+    CONTROL         "Per l'interpolazione si usano solo i dati entro un raggio prefissato dalla cella incognita",IDC_INSIDE_RAY,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,24,147,153,24
+    GROUPBOX        "Parametri di calcolo",IDC_STATIC,15,137,259,111
+    EDITTEXT        IDC_RAY,213,153,26,12,ES_AUTOHSCROLL
+    LTEXT           "Raggio:",IDC_STATIC,183,154,26,11
+    PUSHBUTTON      "",IDC_RAY_BUTTON,249,152,15,14,BS_BITMAP
+    EDITTEXT        IDC_MIN_PTS,203,174,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Numero minimo di celle valide per interpolare:",IDC_STATIC,48,175,149,13
+    GROUPBOX        "Media pesata in base a",IDC_STATIC,23,193,243,28
+    CONTROL         "Inverso della distanza",IDC_INVERSE_DIST_RADIO,"Button",BS_AUTORADIOBUTTON,34,206,86,10
+    CONTROL         "Inverso del quadrato della distanza",IDC_QUADRATIC_INVERSE_DIST_RADIO,
+                    "Button",BS_AUTORADIOBUTTON,133,206,127,10
+    CONTROL         "Il calcolo deve ripetersi finchè tutte le celle hanno valore",IDC_RECURSIVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,231,203,8
+    COMBOBOX        IDC_BARRIER_ATTRIBUTE,138,279,133,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nel caso esista una barriera, indicare quale attributo contiene il fattore di barriera (0 = nessuna barriera .. 100 = barriera totale)",IDC_STATIC,16,257,258,19
+    LTEXT           "Nome attributo fattore di barriera:",IDC_STATIC,20,280,116,12
+END
+
+IDD_GRIDCOUNTUPSTREAMCELLS_DLG DIALOGEX 0, 0, 218, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Conteggio delle celle a monte"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,186,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,88,186,41,14
+    COMBOBOX        IDC_OUTPUT_ATTRIBUTE,73,161,127,41,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    LTEXT           "Per ogni cella della griglia nell'area selezionata viene calcolato il n. delle celle a monte. In quale attributo si desidera memorizzare il conteggio ?",IDC_STATIC,14,131,190,27
+    LTEXT           "Nome attributo:",IDC_STATIC,13,161,55,12
+    GROUPBOX        "Area di calcolo",IDC_STATIC,14,64,188,27
+    COMBOBOX        IDC_GRID_GRIDAREATYPE,20,74,174,39,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DIRECTION_ATTRIBUTE,16,111,186,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Attributo contenente il codice della cella a valle:",IDC_STATIC,15,98,186,11
+    PUSHBUTTON      "?",IDHELP,140,186,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,204,175,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,16,26,186,34
+END
+
+IDD_GRIDGETCATCHMENTAREACELLS_DLG DIALOGEX 0, 0, 218, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Cerca le celle del bacino"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,180,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,88,180,41,14
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    GROUPBOX        "Punto della cella di partenza",IDC_STATIC,14,64,188,29
+    COMBOBOX        IDC_DIRECTION_ATTRIBUTE,15,120,186,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Per la cella indicata viene cercato l'insieme delle celle a monte. Attributo contenente il codice della cella a valle:",IDC_STATIC,15,98,186,17
+    PUSHBUTTON      "?",IDHELP,140,180,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,204,166,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,16,26,186,34
+    EDITTEXT        IDC_COORDX_EDIT,33,75,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COORDY_EDIT,114,75,45,13,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,21,76,9,12
+    LTEXT           "Y:",IDC_STATIC,101,76,10,12
+    PUSHBUTTON      "",IDC_POINT_SELECTION,181,74,16,14,BS_BITMAP
+    GROUPBOX        "Direzione della ricerca",IDC_STATIC,16,140,183,25
+    CONTROL         "Verso monte",IDC_DIRECTION_UP_RADIO,"Button",BS_AUTORADIOBUTTON,31,153,55,8
+    CONTROL         "Verso valle",IDC_DIRECTION_DOWN_RADIO,"Button",BS_AUTORADIOBUTTON,131,153,55,8
+END
+
+IDD_GRID_CONTOURS_DLG DIALOGEX 0, 0, 472, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Visualizza curve di livello"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,172,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,270,172,41,14
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    GROUPBOX        "Area di calcolo",IDC_STATIC,14,64,142,27
+    COMBOBOX        IDC_GRID_GRIDAREATYPE,21,74,126,39,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Z_ATTRIBUTE,73,97,83,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Attributo quota:",IDC_STATIC,13,98,52,12
+    PUSHBUTTON      "?",IDHELP,322,172,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,458,158,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,16,26,140,34
+    CONTROL         "Anteprima",IDC_PREVIEW_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,118,48,11
+    CONTROL         "Unione curve di livello",IDC_JOIN_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,133,100,11
+    CONTROL         "Curvatura curve di livello",IDC_CURVE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,148,100,11
+    PUSHBUTTON      "Autocomposizione...",IDC_AUTOCOMPOSITION,376,136,74,14
+    CONTROL         "",IDC_CONTOUR_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,173,26,196,124
+    PUSHBUTTON      "Salva",IDSAVE,108,172,41,14
+    PUSHBUTTON      "Carica",IDLOAD,160,172,41,14
+    GROUPBOX        "Caratteristiche delle curve di livello",IDC_STATIC,165,15,292,143
+    PUSHBUTTON      "Nuovo...",IDNEW,376,26,74,14
+    PUSHBUTTON      "Cancella...",IDERASE,376,60,74,14
+    PUSHBUTTON      "Modifica...",IDMODIFY,376,43,74,14
+    PUSHBUTTON      "Seleziona",IDSELECT_BUTTON,383,109,60,14
+    GROUPBOX        "Selezione passo",IDC_STATIC,376,78,74,51
+    EDITTEXT        IDC_SELECT_INTERVAL_EDIT,410,91,31,13,ES_AUTOHSCROLL
+    LTEXT           "Ogni:",IDC_STATIC,385,92,18,12
+END
+
+IDD_GRID_UPDZVALUE DIALOGEX 0, 0, 283, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Aggiornamento quota da grafica"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_Z_ATTRIBUTE,117,112,150,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Seleziona tutto",IDC_RADIO_SELECTALL,"Button",BS_AUTORADIOBUTTON,22,25,62,10
+    CONTROL         "Selezione manuale",IDC_RADIO_MANUALSELECTION,"Button",BS_AUTORADIOBUTTON,160,25,70,11
+    PUSHBUTTON      "",IDC_BUTTON_OBJSSELECTION,243,22,16,14,BS_BITMAP
+    DEFPUSHBUTTON   "OK",IDOK,64,192,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,120,192,41,14
+    PUSHBUTTON      "?",IDHELP,176,192,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,269,178,0,WS_EX_TRANSPARENT
+    LTEXT           "Classe griglia:",IDC_STATIC,16,57,156,11
+    GROUPBOX        "Selezione oggetti",IDC_STATIC,14,13,253,41
+    LTEXT           "Attributo da aggiornare:",IDC_STATIC,15,113,95,12
+    LTEXT           "0 oggetti selezionati",IDC_N_SELECTED,23,40,165,13
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,68,254,36
+    GROUPBOX        "Sorgente dati",IDC_GROUP,15,130,253,47
+    CONTROL         "elevazione oggetti grafici",IDC_RADIO_ELEVATION,"Button",BS_AUTORADIOBUTTON,24,142,96,10
+    CONTROL         "attributo di database",IDC_RADIO_ATTRIB,"Button",BS_AUTORADIOBUTTON,24,156,83,10
+    EDITTEXT        IDC_SRC_ATTRIB,120,156,140,12,ES_AUTOHSCROLL
+END
+
+IDD_GRID_UPDVALUE_FROMDB DIALOGEX 0, 0, 290, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Aggiornamento dati da DB"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DSTATTRIB_COMBO,136,165,98,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,68,193,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,124,193,41,14
+    PUSHBUTTON      "?",IDHELP,180,193,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,276,179,0,WS_EX_TRANSPARENT
+    LTEXT           "Classe griglia:",IDC_STATIC,16,108,156,11
+    GROUPBOX        "Sorgente dati",IDC_STATIC,14,13,261,91
+    LTEXT           "Attributo destinazione:",IDC_STATIC,56,166,78,12
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,122,262,36
+    LTEXT           "Tipo connessione:",IDC_STATIC,20,24,65,9
+    PUSHBUTTON      "Sorgente dati...",IDC_BUTTON1,201,22,67,14
+    LTEXT           "Tabella:",IDC_STATIC,20,42,28,9
+    EDITTEXT        IDC_UDL_EDIT,82,23,110,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FULLREFTABLE_EDIT,82,41,186,13,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_SRCXATTRIB_COMBO,60,67,73,52,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coord. X:",IDC_STATIC,21,68,34,8
+    COMBOBOX        IDC_SRCYATTRIB_COMBO,194,67,73,52,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coord. Y:",IDC_STATIC,155,68,34,8
+    LTEXT           "Campo sorgente:",IDC_STATIC,77,87,63,13
+    COMBOBOX        IDC_SRCATTRIB_COMBO,138,85,73,52,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GRID_VALLEY_RIDGE_DLG DIALOGEX 0, 0, 186, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Visualizza valli o crinali"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,172,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,73,172,41,14
+    LTEXT           "Classe griglia:",IDC_STATIC,16,13,156,11
+    GROUPBOX        "Area di calcolo",IDC_STATIC,14,64,158,27
+    COMBOBOX        IDC_GRID_GRIDAREATYPE,20,74,145,39,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Z_ATTRIBUTE,73,97,99,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Attributo quota:",IDC_STATIC,13,98,52,12
+    PUSHBUTTON      "?",IDHELP,125,172,41,14
+    GROUPBOX        "",IDC_STATIC,7,7,172,158,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,16,26,156,34
+    GROUPBOX        "Visualizza",IDC_VALLEY_RIDGE_LBL,15,114,157,25
+    CONTROL         "Valli",IDC_VALLEY_RADIO,"Button",BS_AUTORADIOBUTTON,34,125,33,9
+    CONTROL         "Crinali",IDC_RIDGE_RADIO,"Button",BS_AUTORADIOBUTTON,120,125,40,9
+    CONTROL         "Anteprima",IDC_PREVIEW_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,146,48,11
+    PUSHBUTTON      "Caratteristiche grafiche...",IDC_FAS_BUTTON,69,146,103,13
+END
+
+IDD_GRID_AUTO_CONTOURS_DLG DIALOGEX 0, 0, 151, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Curve di livello"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,129,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,55,129,41,14
+    PUSHBUTTON      "?",IDHELP,103,129,41,14
+    CONTROL         "per n. intervalli",IDC_AUTO_PER_N_INTERVALS,"Button",BS_AUTORADIOBUTTON,15,20,64,10
+    CONTROL         "per passo ogni",IDC_AUTO_PER_STEPS,"Button",BS_AUTORADIOBUTTON,15,36,73,10
+    PUSHBUTTON      "Colore iniziale...",IDC_START_COLOR,7,95,65,14
+    PUSHBUTTON      "Colore finale...",IDC_FINAL_COLOR,79,95,65,14
+    EDITTEXT        IDC_AUTO_N_INTERVALS,104,19,32,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTO_STEP,104,34,32,13,ES_AUTOHSCROLL
+    GROUPBOX        "Tipo di autocomposizione",IDC_STATIC,7,7,137,47
+    LTEXT           ">",IDC_ARROW1,30,113,8,8
+    LTEXT           ">",IDC_ARROW2,40,113,8,8
+    LTEXT           ">",IDC_ARROW3,49,113,8,8
+    LTEXT           ">",IDC_ARROW4,58,113,8,8
+    LTEXT           ">",IDC_ARROW5,68,113,8,8
+    LTEXT           ">",IDC_ARROW6,77,113,8,8
+    LTEXT           ">",IDC_ARROW7,86,113,8,8
+    LTEXT           ">",IDC_ARROW8,96,113,8,8
+    LTEXT           ">",IDC_ARROW9,105,113,8,8
+    LTEXT           ">",IDC_ARROW10,114,113,8,8
+    EDITTEXT        IDC_MIN_VALUE,104,60,32,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_VALUE,104,76,32,13,ES_AUTOHSCROLL
+    LTEXT           "Valore minimo:",IDC_STATIC,11,61,50,12
+    LTEXT           "Valore massimo:",IDC_STATIC,11,77,59,12
+END
+
+IDD_GRID_PROP_CONTOUR_DLG DIALOGEX 0, 0, 208, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Proprietà curve di livello"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,114,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,82,114,41,14
+    PUSHBUTTON      "?",IDHELP,136,114,41,14
+    PUSHBUTTON      "Opzioni...",IDC_COLOR_BUTTON,152,33,41,14
+    EDITTEXT        IDC_VALUE,63,17,32,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR,63,34,79,13,ES_AUTOHSCROLL
+    GROUPBOX        "Proprietà",IDC_STATIC,7,7,194,99
+    LTEXT           "Valore:",IDC_STATIC,14,20,40,8
+    LTEXT           "Colore:",IDC_STATIC,14,37,40,8
+    LTEXT           "Descrizione:",IDC_STATIC,14,54,40,8
+    LTEXT           "Tipolinea:",IDC_STATIC,14,71,40,8
+    LTEXT           "Piano:",IDC_STATIC,14,88,40,8
+    EDITTEXT        IDC_DESCRIPTION,63,51,129,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Opzioni...",IDC_LINETYPE_BUTTON,152,67,41,14
+    PUSHBUTTON      "Opzioni...",IDC_LAYER_BUTTON,152,85,41,14
+    EDITTEXT        IDC_LINETYPE,63,69,80,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAYER,63,86,80,13,ES_AUTOHSCROLL
+END
+
+IDD_GEOM_DB_LINK_DLG DIALOGEX 0, 0, 423, 425
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tabella geometria"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_UDL_EDIT,76,18,88,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Sorgente dati...",IDC_DATA_SOURCE_BUTTON,171,17,67,14
+    EDITTEXT        IDC_FULLREFTABLE_EDIT,76,36,162,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SQL_COND_EDIT,76,54,162,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_GEOM_UNIQUE_ID_COMBO,158,80,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY_ID_COMBO,158,97,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AGGR_FACTOR_COMBO,158,115,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_N_DIM_COMBO,158,141,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Campo geometrico",IDC_GEOM_FIELD_RADIO,"Button",BS_AUTORADIOBUTTON,15,160,75,10
+    COMBOBOX        IDC_GEOM_FIELD_COMBO,158,159,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Campi numerici",IDC_NUMERIC_FIELD_RADIO,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,15,214,63,10
+    COMBOBOX        IDC_X_FIELD_COMBO,158,178,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Y_FIELD_COMBO,158,196,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Z_FIELD_COMBO,158,213,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BULGE_FIELD_COMBO,158,231,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINE_ID_COMBO,158,249,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ROT_COMBO,158,268,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ROT_UNIT_COMBO,86,288,151,12,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LAYER_COMBO,158,321,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COLOR_COMBO,158,339,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COLOR_FMT_COMBO,86,358,151,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_THICKNESS_COMBO,158,377,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINETYPE_COMBO,330,59,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINETYPE_SCALE_COMBO,330,77,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINETYPE_WIDTH_COMBO,330,95,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HATCH_COMBO,331,131,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HATCH_LAYER_COMBO,331,149,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HATCH_COLOR_COMBO,331,166,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HATCH_SCALE_COMBO,331,184,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HATCH_ROT_COMBO,331,203,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TEXT_COMBO,330,237,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_H_TEXT_COMBO,330,255,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TEXT_STYLE_COMBO,330,272,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HORIZ_ALIGN_COMBO,330,290,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VERT_ALIGN_COMBO,330,309,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OBLIQUE_ANGLE_COMBO,330,327,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BLOCK_COMBO,330,360,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BLOCK_SCALE_COMBO,330,378,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,119,404,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,192,404,50,14
+    PUSHBUTTON      "?",IDHELP,264,404,50,14
+    LTEXT           "Numero dimensioni geometria:",IDC_STATIC,16,142,110,12
+    LTEXT           "Tipo connessione:",IDC_STATIC,14,19,59,9
+    LTEXT           "Tabella:",IDC_STATIC,14,37,28,9
+    LTEXT           "Condizione SQL:",IDC_STATIC,14,56,53,11
+    GROUPBOX        "Sorgente dati geometria",IDC_STATIC,7,7,237,67
+    LTEXT           "Identificatore univoco geometria:",IDC_STATIC,10,81,110,12
+    LTEXT           "Identificatore entità:",IDC_STATIC,10,97,110,12
+    GROUPBOX        "Formato geometria",IDC_STATIC,7,130,238,178
+    LTEXT           "Campo X:",IDC_STATIC,90,180,34,11
+    LTEXT           "Campo Y:",IDC_STATIC,90,198,34,11
+    LTEXT           "Campo Z:",IDC_STATIC,90,215,34,11
+    LTEXT           "Campo rotazione:",IDC_STATIC,16,270,60,12
+    LTEXT           "Unità di rotazione:",IDC_STATIC,16,290,61,12
+    LTEXT           "Campo curvatura:",IDC_STATIC,90,233,64,8
+    LTEXT           "Identificatore linea:",IDC_STATIC,90,250,64,8
+    LTEXT           "Piano:",IDC_STATIC,16,323,21,8
+    LTEXT           "Colore:",IDC_STATIC,16,340,24,8
+    LTEXT           "Tipo linea:",IDC_STATIC,259,61,34,8
+    LTEXT           "Scala tipo linea:",IDC_STATIC,259,78,51,8
+    LTEXT           "Larghezza linea:",IDC_STATIC,259,95,53,8
+    LTEXT           "Valore testo:",IDC_STATIC,259,239,42,8
+    LTEXT           "Altezza testo:",IDC_STATIC,259,256,46,8
+    LTEXT           "Stile testo:",IDC_STATIC,259,274,36,8
+    LTEXT           "Allineam. orizzontale:",IDC_STATIC,259,292,69,8
+    LTEXT           "Allineam. verticale:",IDC_STATIC,259,309,62,8
+    LTEXT           "Angolo obliquo:",IDC_STATIC,259,329,50,8
+    LTEXT           "Blocco:",IDC_STATIC,259,363,24,8
+    LTEXT           "Scala blocco:",IDC_STATIC,259,380,42,8
+    GROUPBOX        "Campi generici",IDC_STATIC,7,311,238,87
+    GROUPBOX        "Campi per le linee",IDC_STATIC,253,49,163,67
+    GROUPBOX        "Campi per i testi",IDC_STATIC,253,226,163,120
+    GROUPBOX        "Campi per i blocchi",IDC_STATIC,253,349,163,48
+    LTEXT           "Spessore verticale:",IDC_STATIC,16,379,62,8
+    LTEXT           "Riempimento:",IDC_STATIC,259,133,42,8
+    LTEXT           "Piano riempimento:",IDC_STATIC,259,150,62,8
+    LTEXT           "Colore riempimento:",IDC_STATIC,259,168,65,8
+    LTEXT           "Scala riempimento:",IDC_STATIC,259,187,61,8
+    LTEXT           "Rotaz. riempimento:",IDC_STATIC,259,204,66,8
+    GROUPBOX        "Campi per le superfici",IDC_STATIC,253,120,163,103
+    LTEXT           "Fattore di aggregazione:",IDC_STATIC,10,115,110,12
+    LTEXT           "Formato colore:",IDC_STATIC,16,360,56,12
+END
+
+IDD_ALFANUM_DB_LINK_DLG DIALOGEX 0, 0, 251, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tabella alfanumerica"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,124,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,101,124,50,14
+    LTEXT           "Tipo connessione:",-1,14,19,65,9
+    PUSHBUTTON      "Sorgente dati...",IDC_DATA_SOURCE_BUTTON,171,17,67,14
+    LTEXT           "Tabella:",-1,14,37,28,9
+    EDITTEXT        IDC_UDL_EDIT,76,18,88,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FULLREFTABLE_EDIT,76,36,162,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SQL_COND_EDIT,76,54,162,13,ES_AUTOHSCROLL
+    LTEXT           "Condizione SQL:",-1,14,56,53,11
+    GROUPBOX        "Sorgente dati",-1,7,7,237,67
+    LTEXT           "Identificatore univoco entità:",-1,10,83,110,12
+    COMBOBOX        IDC_ENTITY_ID_COMBO,158,82,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Campo valore testo:",-1,10,99,110,12
+    COMBOBOX        IDC_TEXT_COMBO,158,99,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?",IDHELP,173,124,50,14
+END
+
+IDD_MULTIGEOCOMPONENTSELECT_DLG DIALOGEX 0, 0, 192, 218
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,197,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,70,197,50,14
+    PUSHBUTTON      "?",IDHELP,135,197,50,14
+    LTEXT           "",IDC_MSG,10,31,151,10
+    PUSHBUTTON      "",IDC_GRAPH_SELECTION,168,27,15,15,BS_BITMAP
+    CONTROL         "",IDC_GEOCLASSLISTCTRL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,49,176,139,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_PROJECT_COMBO,48,7,136,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Progetto:",IDC_STATIC,10,8,35,12
+END
+
+IDD_DYNSEGMENTATIONCALIBRATE_DLG DIALOGEX 0, 0, 230, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Calibrazione segmentazione dinamica"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DIST_ATTRIBUTE,98,188,118,92,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Seleziona tutto",IDC_RADIO_SELECTALL,"Button",BS_AUTORADIOBUTTON,21,83,62,10
+    CONTROL         "Selezione manuale",IDC_RADIO_MANUALSELECTION,"Button",BS_AUTORADIOBUTTON,93,83,70,11
+    PUSHBUTTON      "",IDC_BUTTON_OBJSSELECTION,192,80,16,14,BS_BITMAP
+    DEFPUSHBUTTON   "OK",IDOK,39,253,41,14
+    PUSHBUTTON      "Annulla",IDCANCEL,95,253,41,14
+    PUSHBUTTON      "?",IDHELP,151,253,41,14
+    GROUPBOX        "Entità da calibrare",IDC_STATIC,7,7,216,112,0,WS_EX_TRANSPARENT
+    LTEXT           "Classe:",IDC_STATIC,16,18,156,11
+    GROUPBOX        "Selezione oggetti",IDC_STATIC,14,71,201,41
+    LTEXT           "Attributo distanza:",IDC_STATIC,15,189,78,12
+    LTEXT           "0 oggetti selezionati",IDC_N_SELECTED,23,98,165,13
+    CONTROL         "",IDC_GEOTREECTRL,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,29,202,36
+    GROUPBOX        "Riferimento distanziometrico",IDC_STATIC,7,121,216,124,0,WS_EX_TRANSPARENT
+    LTEXT           "Classe:",IDC_STATIC,16,133,156,11
+    CONTROL         "",IDC_GEOTREECTRL_REF,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,145,202,36
+    EDITTEXT        IDC_TOLERANCE_EDIT,15,225,40,13,ES_AUTOHSCROLL
+    LTEXT           "Distanza di tolleranza tra le entità da calibrare e quelle di riferimento:",IDC_STATIC,15,205,200,20
+END
+
+IDD_DYNSEGMENTATION_DLG DIALOGEX 0, 0, 238, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Segmentazione dinamica"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,23,175,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,96,175,50,14
+    GROUPBOX        "Tipologia segmentazione dinamica",IDC_STATIC,7,7,223,29
+    LTEXT           "Distanza iniziale:",IDC_REAL_INIT_DISTANCE_ATTRIB_LBL,15,55,94,12
+    COMBOBOX        IDC_NOMINAL_INIT_DISTANCE_ATTRIB_COMBO,112,71,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Distanza nominale iniziale:",IDC_NOMINAL_INIT_DISTANCE_ATTRIB_LBL,15,71,95,12
+    CONTROL         "Puntuale",IDC_PUNCTUAL_RADIO,"Button",BS_AUTORADIOBUTTON,48,20,44,10
+    GROUPBOX        "Campi per le distanze",IDC_DISTANCE_GROUP,7,42,223,125
+    COMBOBOX        IDC_REAL_INIT_DISTANCE_ATTRIB_COMBO,112,54,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?",IDHELP,168,175,50,14
+    CONTROL         "Lineare",IDC_LINEAR_RADIO,"Button",BS_AUTORADIOBUTTON,154,21,39,10
+    LTEXT           "Distanza finale:",IDC_REAL_FINAL_DISTANCE_ATTRIB_LBL,16,100,89,12
+    COMBOBOX        IDC_NOMINAL_FINAL_DISTANCE_ATTRIB_COMBO,112,116,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Distanza nominale finale:",IDC_NOMINAL_FINAL_DISTANCE_ATTRIB_LBL,16,116,93,12
+    COMBOBOX        IDC_REAL_FINAL_DISTANCE_ATTRIB_COMBO,112,100,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REAL_OFFSET_ATTRIB_COMBO,112,145,79,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Offset:",IDC_REAL_OFFSET_ATTRIB_LBL,16,145,94,12
+    CONTROL         241,IDC_STATIC,"Static",SS_BITMAP,202,55,21,10
+    CONTROL         242,IDC_FINAL_DIST_IMAGE,"Static",SS_BITMAP,201,100,21,10
+    CONTROL         243,IDC_OFFSET_DIST_IMAGE,"Static",SS_BITMAP,201,145,21,10
+END
+
+IDD_PGVIEW_DLG DIALOGEX 0, 0, 249, 254
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Gestione viste in PostgreSQL"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Crea viste",IDOK,6,214,57,14
+    PUSHBUTTON      "Annulla",IDCANCEL,138,214,57,14
+    PUSHBUTTON      "?",IDHELP,204,214,35,14
+    LTEXT           "Selezionare una o più classi:",IDC_MSG,10,31,183,10
+    CONTROL         "",IDC_GEOCLASSLISTCTRL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,8,47,233,144,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_PROJECT_COMBO,51,7,189,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Progetto:",IDC_STATIC,10,8,35,12
+    CONTROL         "Pulizia tabella <geometry_columns>",IDC_GEOMETRY_COLUMNS_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,199,174,10
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,233,234,14
+    DEFPUSHBUTTON   "Cancella viste",ID_DEL_VIEW,72,214,57,14
+END
+
+IDD_QGIS_PROPERTIES DIALOGEX 0, 0, 398, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,18,17,320,13,ES_AUTOHSCROLL
+    GROUPBOX        "File di progetto QGIS",IDC_STATIC,7,4,383,33
+    PUSHBUTTON      "...",IDC_BROWSE_BUTTON,349,18,32,13
+    GROUPBOX        "Proprietà di connessione a DB PostgreSQL",IDC_STATIC,7,42,383,72
+    LTEXT           "Host:",IDC_STATIC,16,58,23,9
+    EDITTEXT        IDC_HOST_EDIT,66,55,162,12,ES_AUTOHSCROLL
+    LTEXT           "Porta:",IDC_STATIC,301,56,25,11
+    EDITTEXT        IDC_PORT_EDIT,329,55,50,12,ES_AUTOHSCROLL
+    LTEXT           "Database:",IDC_STATIC,16,77,36,9
+    EDITTEXT        IDC_DATABASE_EDIT,66,74,161,12,ES_AUTOHSCROLL
+    LTEXT           "Utente:",IDC_STATIC,16,96,43,9
+    EDITTEXT        IDC_USER_NAME_EDIT,66,93,102,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,238,96,34,9
+    EDITTEXT        IDC_PWD_EDIT,277,93,102,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "SRID (Spatial Reference System Identifier) del progetto:",IDC_STATIC,8,125,182,8
+    EDITTEXT        IDC_SRID_EDIT,198,121,113,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Usa fattori di scala",IDC_SCALE_FACTOR_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,154,164,10
+    EDITTEXT        IDC_MIN_FACTOR_EDIT2,75,169,66,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Fattori di scala per la visualizzazione delle etichette",IDC_STATIC,7,141,383,48
+    EDITTEXT        IDC_MAX_FACTOR_EDIT2,315,169,66,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Fattore minimo:",IDC_STATIC,18,170,53,11
+    LTEXT           "Fattore massimo:",IDC_STATIC,242,170,61,11
+END
+
+IDD_QGIS_DLG DIALOGEX 0, 0, 416, 289
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Creazione progetto Quantum GIS"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "OK",IDOK,221,268,57,14
+    PUSHBUTTON      "Annulla",IDCANCEL,286,268,57,14
+    PUSHBUTTON      "?",IDHELP,351,268,57,14
+    PUSHBUTTON      "Salva...",IDSAVE,73,268,57,14
+    PUSHBUTTON      "Carica...",IDLOAD,7,268,57,14
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,8,9,400,253
+END
+
+IDD_QGIS_CLASS DIALOGEX 0, 0, 398, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Lista classi GEOsim",IDC_MSG,8,29,154,10
+    CONTROL         "",IDC_GEOCLASSLISTCTRL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,42,157,113,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_PROJECT_COMBO,75,9,155,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Progetto GEOsim:",IDC_STATIC,9,10,57,12
+    PUSHBUTTON      "Aggiungi >>",IDC_ADD_CLASS_BUTTON,171,76,55,16
+    PUSHBUTTON      "<< Rimuovi",IDC_DEL_CLASS_BUTTON,171,105,55,16
+    CONTROL         "",IDC_GEOCLASSLIST_TO_EXPORT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,233,42,157,113,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    GROUPBOX        "Proprietà delle classi da esportare correntemente selezionate",IDC_STATIC,8,161,382,48
+    LTEXT           "Classi da esportare nel progetto QGIS",IDC_MSG2,236,29,146,10
+    EDITTEXT        IDC_MIN_FACTOR_EDIT,85,183,66,12,ES_AUTOHSCROLL
+    GROUPBOX        "Fattori di scala per la visualizzazione della geometria",IDC_STATIC,17,170,363,33
+    EDITTEXT        IDC_MAX_FACTOR_EDIT,304,183,66,12,ES_AUTOHSCROLL
+    LTEXT           "Fattore minimo:",IDC_STATIC,28,184,53,11
+    LTEXT           "Fattore massimo:",IDC_STATIC,236,184,56,11
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,6,215,384,14
+END
+
+IDD_QGIS_CLASS_GRP DIALOGEX 0, 0, 398, 238
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Raggruppamenti di classi",IDC_STATIC,7,4,383,219
+    PUSHBUTTON      "Nuovo",IDC_ADD,322,19,57,14
+    PUSHBUTTON      "Elimina",IDC_REMOVE,322,39,57,14
+    PUSHBUTTON      "Elimina tutto",IDC_REMOVE_ALL,322,59,57,14
+    EDITTEXT        IDC_GENERIC_EDIT,322,84,22,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | NOT WS_TABSTOP
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,16,19,295,196,WS_EX_CLIENTEDGE
+END
+
+IDD_HISTORY_DLG DIALOGEX 0, 0, 311, 242
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Storicizzazione dati"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Abilita e crea classe",IDOK,6,200,89,14
+    PUSHBUTTON      "Annulla",IDCANCEL,213,200,50,14
+    PUSHBUTTON      "?",IDHELP,269,200,34,14
+    LTEXT           "Selezionare una o più classi:",IDC_MSG,10,31,183,10
+    CONTROL         "",IDC_GEOCLASSLISTCTRL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,43,296,150,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_PROJECT_COMBO,47,8,162,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Progetto:",IDC_STATIC,10,9,35,12
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,221,296,14
+    DEFPUSHBUTTON   "Disabilita",ID_DEL_HISTORY,157,200,50,14
+    DEFPUSHBUTTON   "Abilita",ID_ENABLE_HISTORY,101,200,50,14
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,68,99
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,87,22,97,70,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,199,7,110,81,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "State: aa, Zip: 11111-1111",IDC_MFCMASKEDEDIT1,
+                    "MfcMaskedEdit",WS_BORDER | WS_TABSTOP | 0x80,90,129,80,14
+    EDITTEXT        IDC_EDIT1,192,132,73,11,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,205,159,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,259,159,50,14
+END
+
+IDD_CLASS_SET_DIALOG DIALOGEX 0, 0, 316, 270
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Gestione set di classi di entità"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PROJECT_COMBO,49,7,146,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,27,302,124
+    EDITTEXT        IDC_CLASS_SET_NAME_EDIT,66,168,151,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLASS_SET_DESCR_EDIT,66,185,236,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLASS_SET_IMAGE_EDIT,66,202,151,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Sfoglia...",IDC_CLASS_SET_IMAGE_BROWSE,253,202,49,14
+    PUSHBUTTON      "Aggiungi",IDC_ADD_CLASS_SET,65,223,60,14
+    PUSHBUTTON      "Aggiorna",IDC_UPD_CLASS_SET,127,223,60,14
+    PUSHBUTTON      "Cancella",IDC_DEL_CLASS_SET,189,223,60,14
+    PUSHBUTTON      "OK",IDOK,78,249,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,133,249,50,14
+    PUSHBUTTON      "?",IDHELP,187,249,50,14
+    GROUPBOX        "Definizione del set di classi",IDC_STATIC,7,156,302,86
+    LTEXT           "Nome:",IDC_STATIC,15,170,22,8
+    LTEXT           "Descrizione:",IDC_STATIC,15,187,40,8
+    LTEXT           "Immagine:",IDC_STATIC,15,203,34,8
+    CONTROL         "",IDC_CLASS_SET_IMAGE_PICTURE,"Static",SS_BITMAP | SS_CENTERIMAGE,226,199,20,20
+    LTEXT           "Progetto:",IDC_STATIC,10,8,35,12
+    LTEXT           "",IDC_STATIC_CODE,286,169,16,11
+    LTEXT           "Codice:",IDC_STATIC,257,169,25,8
+END
+
+IDD_CREATE_USR DIALOGEX 0, 0, 215, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Creazione utente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,133,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,82,133,50,14
+    EDITTEXT        IDC_USR_NAME,67,7,141,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDHELP,157,133,50,14
+    LTEXT           "Nome utente:",IDC_STATIC,7,7,47,11
+    EDITTEXT        IDC_USR_PWD1,105,23,103,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,35,24,36,11
+    EDITTEXT        IDC_USR_PWD2,105,39,103,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Conferma password:",IDC_STATIC,35,40,70,10
+    GROUPBOX        "Livello",IDC_STATIC,7,60,201,30
+    CONTROL         "Super utente (amministratore)",IDC_SUPERUSER_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,15,73,113,10
+    CONTROL         "Utente",IDC_USER_RADIO,"Button",BS_AUTORADIOBUTTON,167,73,38,10
+    CONTROL         "Da utente:",IDC_PERMISSION_FROM_USR_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,104,53,10
+    COMBOBOX        IDC_USRLIST,74,103,126,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Copia abilitazioni",IDC_STATIC,7,92,201,30
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,7,26,24,21
+END
+
+IDD_MODI_PWD_CURR_USR DIALOGEX 0, 0, 232, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Modifica password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_OLD_USR_PWD,120,28,97,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_USR_PWD1,120,44,97,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_USR_PWD2,120,60,97,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,68,89,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,122,89,50,14
+    PUSHBUTTON      "?",IDHELP,175,89,50,14
+    LTEXT           "Vecchia password:",IDC_STATIC,43,29,72,11
+    LTEXT           "Nuova password:",IDC_STATIC,43,45,72,11
+    LTEXT           "Conferma password:",IDC_STATIC,43,62,72,10
+    GROUPBOX        "",IDC_STATIC,7,18,218,61
+    LTEXT           "Nome utente:",IDC_STATIC,7,7,47,11
+    LTEXT           "-",IDC_USR_NAME,65,7,160,11
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,13,40,22,21
+END
+
+IDD_MOD_USR DIALOGEX 0, 0, 215, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Modifica utente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_USRLIST,72,7,136,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ai comandi...",IDC_CMD_LIST,22,59,79,14
+    PUSHBUTTON      "Ai dati...",IDC_DATA_LIST,114,59,79,14
+    COMBOBOX        IDC_USRLIST_COPYFROM,65,87,136,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,32,114,46,14
+    PUSHBUTTON      "Annulla",IDCANCEL,84,114,46,14
+    PUSHBUTTON      "?",IDHELP,137,114,46,14
+    LTEXT           "Nome utente:",-1,7,7,47,11
+    CONTROL         "Da utente:",IDC_PERMISSION_FROM_USR_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,88,49,10
+    GROUPBOX        "Abilitazioni",-1,7,39,201,68
+    LTEXT           "Codice utente:",IDC_USERCODE,7,25,84,9
+    GROUPBOX        "",-1,14,48,187,32
+END
+
+IDD_MOD_DATA_USR DIALOGEX 0, 0, 329, 347
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Modifica abilitazione ai dati"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PRJ_TREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,15,15,210,91
+    CONTROL         "Ereditato",IDC_PRJ_INH_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,251,30,45,10
+    CONTROL         "Invisibile",IDC_PRJ_INV_RADIO,"Button",BS_AUTORADIOBUTTON,251,42,43,10
+    CONTROL         "Sola lettura",IDC_PRJ_VIS_RADIO,"Button",BS_AUTORADIOBUTTON,251,54,53,10
+    CONTROL         "Modificabile",IDC_PRJ_MOD_RADIO,"Button",BS_AUTORADIOBUTTON,251,66,53,10
+    PUSHBUTTON      "Aggiorna",IDC_PRJ_UPGRADE,248,87,50,14
+    CONTROL         "",IDC_CLASS_TREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,17,172,38,73
+    PUSHBUTTON      "Aggiorna",IDC_UPDGRADE,250,280,50,14
+    PUSHBUTTON      "Eredità abilitazioni...",IDC_INHERITANCE_BUTTON,7,326,82,14
+    DEFPUSHBUTTON   "OK",IDOK,167,326,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,220,326,50,14
+    PUSHBUTTON      "?",IDHELP,272,326,50,14
+    GROUPBOX        "",IDC_STATIC,241,21,67,60
+    GROUPBOX        "Abilitazione progetto",IDC_STATIC,233,11,84,96
+    GROUPBOX        "Abilitazione classi selezionate",IDC_PERMISSION_GROUPBOX,21,263,286,41
+    GROUPBOX        "",IDC_STATIC_GRP,28,272,215,26
+    GROUPBOX        "Progetti",IDC_STATIC,7,3,315,317,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,15,116,301,51,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SEC_TREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,269,172,38,73
+    CONTROL         "Ereditato",IDC_INH_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,32,282,45,10
+    CONTROL         "Invisibile",IDC_INV_RADIO,"Button",BS_AUTORADIOBUTTON,80,282,43,10
+    CONTROL         "Sola lettura",IDC_VIS_RADIO,"Button",BS_AUTORADIOBUTTON,126,281,53,10
+    CONTROL         "Modificabile",IDC_MOD_RADIO,"Button",BS_AUTORADIOBUTTON,184,282,53,10
+END
+
+IDD_INHERITANCE_DATA_USR DIALOGEX 0, 0, 314, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GEOsim - Eredità abilitazioni"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,153,159,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,205,159,50,14
+    LISTBOX         IDC_USR_LIST,7,20,126,122,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_INHERITANCE_USR_LIST,172,20,126,122,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">>",IDC_ADD_INHERITANCE_BUTTON,141,20,21,14
+    PUSHBUTTON      "<<",IDC_DEL_INHERITANCE_BUTTON,142,41,21,14
+    LTEXT           "Eredita le abilitazioni da",IDC_STATIC,172,7,125,8
+    LTEXT           "Non eredita le abilitazioni da",IDC_STATIC,7,7,126,10
+    PUSHBUTTON      "?",IDHELP,257,159,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ENT_DBVALUES DLGINIT
+BEGIN
+    IDC_MASKEDBOX, 0x37a, 183, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0xdc00, 0x0001, 0xdc00, 0x0001, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0x0500, 0x0000, 0x0880, 0x0000, 0xff80, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x0000, 0x0000, 0x0200, 
+0x5f00, "\000" 
+    0
+END
+
+IDD_DIALOG4 DLGINIT
+BEGIN
+    IDC_MFCMASKEDEDIT1, 0x37c, 220, 0
+0x4d3c, 0x4346, 0x614d, 0x6b73, 0x6465, 0x6445, 0x7469, 0x535f, 0x6c65, 
+0x6365, 0x4274, 0x4779, 0x6f72, 0x7075, 0x463e, 0x4c41, 0x4553, 0x2f3c, 
+0x464d, 0x4d43, 0x7361, 0x656b, 0x4564, 0x6964, 0x5f74, 0x6553, 0x656c, 
+0x7463, 0x7942, 0x7247, 0x756f, 0x3e70, 0x4d3c, 0x4346, 0x614d, 0x6b73, 
+0x6465, 0x6445, 0x7469, 0x4d5f, 0x7361, 0x3e6b, 0x2022, 0x2020, 0x2020, 
+0x2020, 0x6363, 0x2020, 0x2020, 0x2020, 0x6420, 0x6464, 0x6464, 0x642d, 
+0x6464, 0x2264, 0x2f3c, 0x464d, 0x4d43, 0x7361, 0x656b, 0x4564, 0x6964, 
+0x5f74, 0x614d, 0x6b73, 0x3c3e, 0x464d, 0x4d43, 0x7361, 0x656b, 0x4564, 
+0x6964, 0x5f74, 0x6e49, 0x7570, 0x5474, 0x6d65, 0x6c70, 0x7461, 0x3e65, 
+0x5322, 0x6174, 0x6574, 0x203a, 0x5f5f, 0x202c, 0x695a, 0x3a70, 0x5f20, 
+0x5f5f, 0x5f5f, 0x5f2d, 0x5f5f, 0x225f, 0x2f3c, 0x464d, 0x4d43, 0x7361, 
+0x656b, 0x4564, 0x6964, 0x5f74, 0x6e49, 0x7570, 0x5474, 0x6d65, 0x6c70, 
+0x7461, 0x3e65, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_WRKSESSION_CLASSES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_ENT_DBVALUES, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_TREEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        VERTGUIDE, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_OPTION_NET, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_OPTION_ENV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_DATA_MODEL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_ONEGEOCOMPONENTSELECT_DLG, DIALOG
+    BEGIN
+    END
+
+    IDD_DEFTABREF_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_VALUESLISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_MATHOPERAT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_SEC_DBVALUES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_LYR_DISPLAY_MODEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        VERTGUIDE, 44
+        VERTGUIDE, 86
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_GRIDFLOW_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_GRIDDRAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_DB_CONN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_GSVALUESLIST_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 191
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DBVALUESLIST_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_TOPO_RESISTANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 535
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_GRIDSPATIALINTERPOLATIONIDW_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_GRIDCOUNTUPSTREAMCELLS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_GRIDGETCATCHMENTAREACELLS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_GRID_CONTOURS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 465
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_GRID_UPDZVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_GRID_UPDVALUE_FROMDB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_GRID_VALLEY_RIDGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_GRID_AUTO_CONTOURS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_GRID_PROP_CONTOUR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_GEOM_DB_LINK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        VERTGUIDE, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 418
+    END
+
+    IDD_ALFANUM_DB_LINK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_MULTIGEOCOMPONENTSELECT_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 191
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DYNSEGMENTATIONCALIBRATE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_DYNSEGMENTATION_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_PGVIEW_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 248
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_QGIS_PROPERTIES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 390
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_QGIS_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 408
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_QGIS_CLASS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 390
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_QGIS_CLASS_GRP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 390
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_HISTORY_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 303
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_CLASS_SET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_CREATE_USR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_MODI_PWD_CURR_USR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_MOD_USR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_MOD_DATA_USR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_INHERITANCE_DATA_USR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "GEO_UI"
+END
+
+STRINGTABLE
+BEGIN
+    GEOUI_STR1              "\nCaricamento interfaccia utente GEOsim\n"
+END
+
+#endif    // Italiano (Italia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

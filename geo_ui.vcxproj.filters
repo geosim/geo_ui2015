@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="geo_ui.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTest.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GEOListCtrl.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GEOTreeCtrl.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GEOUIacad_cmd.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GEOUIAppl.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GEOUICMDLIST.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GEOUIlisp_cmd.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_attribvalueslistdlg.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_class_set_dlg.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_dblink.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_grid.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_LyrDisplayModel.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_option.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_organizer.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_postgresql.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_query.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_sec.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_sql.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_Topology.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_user.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_utily.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="gs_ui_wrksession.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEdit.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="MyList.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="picture.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Subclass.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="ValuesListDlg.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTest.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOListCtrl.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOListCtrlResource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOTreeCtrl.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOUIacad_cmd.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOUIAppl.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOUICMDLIST.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GEOUIlisp_cmd.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_attribvalueslistdlg.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_class_set_dlg.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_dblink.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_grid.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_LyrDisplayModel.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_option.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_organizer.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_postgresql.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_query.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_sec.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_sql.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_Topology.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_user.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_utily.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="gs_ui_wrksession.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEdit.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="mylist.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="picture.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Subclass.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="ValuesListDlg.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="geo_ui.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="GEOListCtrl.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="chiavi.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="env_variable.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="net_node.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="net_node_sfondo.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="descend.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="ascendin.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="locked.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="unlocked.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="lampadina accesa.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="blank.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="DBVALUES.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="buttonSupport.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="suggest.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="mathop.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="printer.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="SelectObjs.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="VertDBDataGridCtl.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="HorizDBDataGridCtl.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="8x16_visible_ascending.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="8x16_visible_descending.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="8x16_ascending.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="8x16_descendi.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="8x16_visible.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="SecTab.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="ADD_RECORD.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="DEL_RECORD.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="OneColumn.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="OneColum.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="ray.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="init_dist.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="final_dist.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="offset_dist.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="tree_display_mode.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="list_display_mode.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="GEOSIM.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

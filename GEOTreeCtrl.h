@@ -1,0 +1,262 @@
+#pragma once
+
+#ifndef _gs_list_h
+   #include "gs_list.h"
+#endif
+
+#ifndef _gs_prjct_h
+   #include "gs_prjct.h"
+#endif
+
+
+#define ID_GEOTREECTRL_SEARCH_BY_NAME_MENU 101
+#define ID_GEOTREECTRL_LOAD_SEL_MENU       102
+#define ID_GEOTREECTRL_SAVE_SEL_MENU       103
+#define ID_GEOTREECTRL_REFRESH_MENU        104
+#define ID_GEOTREECTRL_INVERT_SEL_MENU     105
+#define ID_GEOTREECTRL_CUT_MENU            106
+#define ID_GEOTREECTRL_PASTE_MENU          107
+
+
+class CGEOTree_Item;
+
+//----------------------------------------------------------------------------//
+//    class CGEOTree_ItemList                                                 //
+//----------------------------------------------------------------------------//
+class CGEOTree_ItemList : public C_LIST
+{
+   public :
+      DllExport CGEOTree_ItemList();
+      DllExport virtual ~CGEOTree_ItemList();  // chiama ~C_LIST
+
+   bool isValidNewItem(CGEOTree_Item *pItem);
+
+   int AddItem(CGEOTree_Item *pItem, CGEOTree_Item *pParentItem,
+               CGEOTree_Item *pInsertAfterItem = NULL);
+   int DelItem(CGEOTree_Item *pItem);
+   int UpdItem(CGEOTree_Item *pItem, const TCHAR *_Name,
+               const TCHAR *_Descr, const TCHAR *_ImagePath, GSDataPermissionTypeEnum _updateable);
+   int MoveItem(CGEOTree_Item *pItem, CGEOTree_Item *pParentItem,
+                CGEOTree_Item *pInsertAfterItem = NULL);
+
+   int LoadPrjs(GSDataModelObjectTypeEnum FinalObjectType, int prj = 0,
+                C_INT_INT_LIST     *pPrjPermissionList = NULL,
+                C_INT_VOIDPTR_LIST *pClassPermissionList = NULL,
+                C_INT_VOIDPTR_LIST *pSecPermissionList = NULL,
+                C_STR_LIST         *pInheritanceUserNames = NULL);
+   int LoadClasses(int prj,
+                   CGEOTree_Item *pParentItem, GSDataModelObjectTypeEnum FinalObjectType,
+                   C_INT_INT_LIST  *pClassPermissionList = NULL,
+                   C_4INT_STR_LIST *pSecPermissionList = NULL,
+                   C_STR_LIST      *pInheritanceUserNames = NULL);
+   int LoadClasses(int prj,
+                   CGEOTree_Item *pParentItem, CGEOTree_Item *pInsertAfterItem, C_SINTH_CLASS_LIST &SinthClassList,
+                   GSDataModelObjectTypeEnum FinalObjectType, bool append,
+                   C_INT_INT_LIST  *pClassPermissionList = NULL,
+                   C_4INT_STR_LIST *pSecPermissionList = NULL,
+                   C_STR_LIST      *pInheritanceUserNames = NULL);
+
+   CGEOTree_Item *LoadClass(int prj, CGEOTree_Item *pParentItem, CGEOTree_Item *pInsertAfterItem,
+                            C_SINTH_CLASS *pSinthClass, GSDataModelObjectTypeEnum FinalObjectType,
+                            C_INT_INT_LIST  *pClassPermissionList = NULL,
+                            C_4INT_STR_LIST *pSecPermissionList = NULL,
+                            C_STR_LIST      *pInheritanceUserNames = NULL);
+   CGEOTree_Item *LoadClassSet(int prj, CGEOTree_Item *pParentItem, CGEOTree_Item *pInsertAfterItem,
+                               C_CLASS_SET *pClassSet, C_SINTH_CLASS_LIST &SinthClassList,
+                               GSDataModelObjectTypeEnum FinalObjectType,
+                               C_INT_INT_LIST  *pClassPermissionList = NULL,
+                               C_4INT_STR_LIST *pSecPermissionList = NULL,
+                               C_STR_LIST      *pInheritanceUserNames = NULL);
+   int LoadSubClasses(int prj, C_SINTH_CLASS *pParentSinthClass, CGEOTree_Item *pParentItem,
+                      GSDataModelObjectTypeEnum FinalObjectType,
+                      C_4INT_STR_LIST *pSecPermissionList = NULL,
+                      C_STR_LIST      *pInheritanceUserNames = NULL);
+   int LoadSecTabs(int prj, int cls, int sub, CGEOTree_Item *pParentItem,
+                   C_4INT_STR_LIST *pSecPermissionList = NULL,
+                   C_STR_LIST      *pInheritanceUserNames = NULL);
+   int GetTotalImageCount(int *ImageCount);
+   int SetTotalImageList(CImageList &TotalImageList);
+   CGEOTree_Item *search_selected(CGEOTree_Item *pCurrent = NULL);
+   CGEOTree_Item *search_cls(int prj, int cls);
+   CGEOTree_Item *search_sec(int prj, int cls, int sub, int sec);
+};
+
+//----------------------------------------------------------------------------//
+//    class CGEOTree_Item                                                     //
+//----------------------------------------------------------------------------//
+class CGEOTree_Item : public C_INT_STR // codice e nome
+{
+   friend class CGEOTree_ItemList;
+
+public:
+	CGEOTree_Item();
+   CGEOTree_Item(int _Key, const TCHAR *_Name,
+                 const TCHAR *_Descr, const TCHAR *_ImagePath,
+                 GSDataModelObjectTypeEnum _ObjectType);
+	CGEOTree_Item(CGEOTree_Item &item);
+
+	virtual ~CGEOTree_Item();
+
+   C_STRING	Descr;      // descrizione
+   int		category;	// categoria (solo per classi)
+	int		type;		   // tipo (per classi, sottoclassi e tabelle secondarie)
+   C_COLOR  color;      // codice colore autocad
+	GSDataPermissionTypeEnum updatable;	// GSInvisibleData = non visibile, GSReadOnlyData = sola lettura, GSUpdateableData = modificabile,
+                        // GSExclusiveUseByAnother = Usata in modo esclusivo da un'altro utente
+	bool		extracted;	// true se estratta nella sessione corrente
+
+	int		image;		// indice dell'immagine assegnata e inserita nella lista (vedi CGEOList_ItemList)
+   C_STRING	ImagePath;  // facoltativo, il percorso della bitmap 16x16 con sfondo bianco
+
+	bool		selected;	// true se l'elemento è stato selezionato
+   int      n_selected;	// numero di figli che sono selezionati
+   int      get_category();
+   int      get_type();
+
+   GSDataModelObjectTypeEnum ObjectType; // Tipo di elemento
+
+   CGEOTree_Item *pParentItem; // Puntatore a elemento padre (es. progetto per la classe)
+   CGEOTree_ItemList ChildItemList; // Lista degli elementi figli
+
+   int get_prj();
+   int get_cls_set();
+   int get_cls();
+   int get_sub();
+   int get_sec();
+   int get_bitmap(CBitmap &CBMP);
+   void copy(CGEOTree_Item &out);
+};
+
+
+// visualizzazione CGEOTreeCtrl
+
+class CGEOTreeCtrl : public CTreeCtrl
+{
+	DECLARE_DYNCREATE(CGEOTreeCtrl)
+
+public:
+	CGEOTreeCtrl();           // costruttore protetto utilizzato dalla creazione dinamica
+	virtual ~CGEOTreeCtrl();
+
+	BOOL MultiSelect;           // se vero è permessa la selezione multipla
+	BOOL SelectedLinkedClass;   // se vero selezionando una classe gruppo vengono selezionate 
+                               // anche quelle che ne fanno parte (se MultiSelect = vero)
+   GSDataModelObjectTypeEnum FinalObjectType; // Tipologia di oggetto che sarà nelle foglie dell'albero. 
+                                              // Serve per decidere quando fermare il caricamento ricorsivo della 
+                                              // struttura della banca dati.
+	BOOL CutAndPaste;           // se vero è abilito la funzione di cut and paste degli elementi selezionati
+
+   int GetSelected(GSDataModelObjectTypeEnum _ObjectType);
+	void SetSelectedPrj(int _prj, bool selected = true);
+	void SetSelectedCls(int _prj, int _cls, bool selected = true);
+	void SetSelectedSub(int _prj, int _cls, int _sub, bool selected = true);
+	void SetSelectedSec(int _prj, int _cls, int _sub, int _sec, bool selected = true);
+
+   CGEOTree_ItemList* get_ItemList_ptr(void);
+   CImageList*        get_ImageList_ptr(void);
+   int                SetTotalImageList(void);
+
+   // FILTRI DI VISUALIZZAZIONE
+	bool        DisplayEmptyClassSet; // Per visualizzare o nascondere i set di classi se sono vuoti
+   C_FAMILY_LIST FilterOnCodes;   // La lista di primo livello individua i progetti
+                                  // La lista di secondo livello individua le classi
+                                  // La lista di terzo livello individua le sottoclassi
+                                  // (se l'elemento padre era una simulazione) o tabelle secondarie
+                                  // La lista di quarto livello individua le tabelle secondarie
+   C_INT_INT_LIST FilterOnClassCategoryTypeList; // Lista delle categorie e tipi di classi e sottoclassi
+   C_INT_LIST FilterOnSecondaryTabType; // Lista dei tipi di tabelle secondarie
+	BOOL       FilterOnExtracted;  // Solo elementi estratti nella sessione corrente
+	BOOL       FilterOnUpdateable; // Solo elementi aggiornabili
+	bool       PrjPermissionVisibility; // Visualizza le abilitazioni ai progetti
+                                       // (ereditato, invisibile, sola lettura, modifica)
+	bool       ClassPermissionVisibility; // Visualizza le abilitazioni alle classi
+                                         // (ereditato, invisibile, sola lettura, modifica)
+	bool       SecPermissionVisibility; // Visualizza le abilitazioni alle tabelle secondarie
+                                       // (ereditato, invisibile, sola lettura, modifica)
+
+   int     LoadFromDB(int prj = 0,
+                      C_INT_INT_LIST *pPrjPermissionList = NULL,
+                      C_INT_VOIDPTR_LIST *pClassPermissionList = NULL,
+                      C_INT_VOIDPTR_LIST *pSecPermissionList = NULL,
+                      C_STR_LIST     *pInheritanceUserNames = NULL); // Legge la lista da DB
+   int     Refresh(CGEOTree_Item *pParentItem = NULL,
+                   HTREEITEM hParent = NULL); // Applica le impostazioni di visualizzazione della lista
+
+   virtual int AddItem(CGEOTree_Item *pItem, HTREEITEM hParentItem, HTREEITEM hInsertAfterItem = NULL);
+   virtual int UpdItem(CGEOTree_Item *pItem, const TCHAR *_Name,
+                       const TCHAR *_Descr, const TCHAR *_ImagePath,
+                       GSDataPermissionTypeEnum _updateable, HTREEITEM hItem);
+   virtual int DelItem(HTREEITEM hItem);
+   virtual int MoveItem(HTREEITEM hItem, HTREEITEM hParentItem, HTREEITEM hInsertAfterItem = NULL);
+
+   HTREEITEM FilteredInsertItemOnTree(CGEOTree_Item *pItem, CGEOTree_Item *pParentItem, HTREEITEM hParent,
+                                      HTREEITEM hInsertAfterItem = NULL);
+   int  UpdateItemOnTree(CGEOTree_Item *pItem, HTREEITEM hItem);
+
+   void SetSelectedCodes(C_INT_LIST &SelectedCodes, bool Selected = true);
+   void SetSelectedCode(int SelectedCode, bool Selected = true, CGEOTree_ItemList *_pItemList = NULL);
+   void GetSelectedCodes(C_INT_LIST &SelectedCodes, bool Selected = true, HTREEITEM hItem = NULL);
+   void DeselectAll(void);
+   void ExpandAll(HTREEITEM hItem = NULL);
+   BOOL DeleteChildItems(HTREEITEM hItem);
+   HTREEITEM FindItem(HTREEITEM hCurrentItem, DWORD_PTR lParam);
+   void getExpanded_prj_clsSet_list(C_INT_INT_LIST &prj_clsSet_List, HTREEITEM hItem = NULL, int prj = 0);
+   void CGEOTreeCtrl::expand_prj_clsSet_list(C_INT_INT_LIST &prj_clsSet_List, HTREEITEM hItem = NULL, int prj = 0);
+   void UpdParentCountSelected(HTREEITEM hItem, int increment); // roby 2016
+
+   virtual BOOL PreTranslateMessage(MSG* pMsg);
+
+   void OnSearchByNameMenu(void);
+   void OnLoadSelMenu(void);
+   void OnSaveSelMenu(void);
+   void OnRefreshMenu(void);
+   void OnInvertSelMenu(void);
+   void OnCutMenu(void);
+   void OnPasteMenu(void);
+
+public:
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+#ifndef _WIN32_WCE
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+#endif
+
+protected:
+
+	CToolTipCtrl      *pToolTip;
+   CGEOTree_ItemList ItemList;
+   CImageList        ImageList;
+   bool              OnRefresh;
+   C_STRING          SearchByName;
+   HTREEITEM         m_CutAndPasteItem;
+   HTREEITEM         m_SelectedItemOnRClick;
+
+   DECLARE_MESSAGE_MAP()
+
+   afx_msg void OnItemExpanded(NMHDR* pNMHDR, LRESULT* pResult);
+   afx_msg BOOL OnSelChanged(NMHDR* pNMHDR, LRESULT* pResult);
+   afx_msg BOOL OnClick(NMHDR* pNMHDR, LRESULT* pResult);
+   afx_msg void OnRClick(NMHDR* pNMHDR, LRESULT* pResult);
+   afx_msg void OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags);
+	afx_msg void OnContextMenu(CWnd* pWnd, CPoint point);
+   afx_msg BOOL OnLButtonUp(UINT nFlags, CPoint point);
+
+   BOOL InitTooltip(void);
+   BOOL DisplayTooltip(MSG* pMsg);
+
+   void Reset_Tree(void);
+   bool Filter(CGEOTree_Item *pItem);
+   void deleteEmptyClassSet(HTREEITEM hItem = NULL);
+   HTREEITEM FindNextItem(HTREEITEM hCurrentItem);
+   HTREEITEM FindItem(HTREEITEM hCurrentItem, LPCTSTR lpszItem, bool wildcomp = false);
+   HTREEITEM FindItemInSubTree(HTREEITEM hCurrentItem, LPCTSTR lpszItem, bool wildcomp = false);
+
+   void OnSelChanged(CGEOTree_Item *pItem, bool selected);
+   int SelChildItems(HTREEITEM hItem); // roby 2016
+   void SelParentItems(HTREEITEM hItem); // roby 2016
+   void SetBoldItem(HTREEITEM hItem, bool bold);
+   void UpdItemTextOnSelected(HTREEITEM hItem); // roby 2016
+
+   void GetPermissionMsg(GSDataPermissionTypeEnum permission, C_STRING &Msg);
+};
